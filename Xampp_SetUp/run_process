@@ -1,0 +1,27 @@
+
+1: Download xampp from  apachefriends.org
+
+2: Opwn the apps/file/package folder.
+
+3: sudo chmod 755 xampp-linux-x64-8.2.12-0-installer.run
+
+4: sudo ./xampp-linux-x64-8.2.12-0-installer.run
+
+5: click forward, donot select xampp core files , select xampp developer files
+
+6: xampp will be install to /opt/lampp
+
+7: START :
+	sudo /opt/lampp/lampp start
+	
+8: STOP :
+	sudo /opt/lampp/lampp stop
+
+9: RESTART :
+	sudo /opt/lampp/lampp restart
+	
+10: Uninstall :
+	
+	
+	
+browser: localhost/phpmyadmin

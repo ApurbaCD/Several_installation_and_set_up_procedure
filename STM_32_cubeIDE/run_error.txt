@@ -1,0 +1,100 @@
+If after clicking run we get this error message 
+
+
+"
+Could not determine GDB version using command: arm-none-eabi-gdb --version
+arm-none-eabi-gdb: error while loading shared libraries: libtinfo.so.5: cannot open shared object file: No such file or directory
+"
+
+
+Then Do :
+
+
+sudo apt update
+sudo apt install libtinfo5
+
+
+If i get error like after giving above command
+
+"
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+
+"
+That error means something went wrong during a package install using apt, often because of:
+
+    A broken or partially installed package
+
+    File conflicts
+
+    Dependency issues
+
+Then Do:
+
+Step 1:
+
+sudo apt --fix-broken install
+sudo apt install libtinfo5
+
+Step 2:
+
+sudo dpkg --configure -a
+sudo apt clean
+sudo apt update
+
+Step 3:
+
+sudo apt install libtinfo5
+
+
+
+If i again get "E: Sub-process /usr/bin/dpkg returned an error code (1)"
+
+Then : 
+
+"trying to overwrite shared '/usr/share/doc/libtinfo5/changelog.Debian.gz', which is different from other instances of package libtinfo5:amd64"
+
+This means the system thinks multiple versions or instances of libtinfo5 exist, and they’re conflicting on a shared file.
+
+command:
+
+sudo dpkg -i --force-overwrite /var/cache/apt/archives/libtinfo5_6.3-2ubuntu0.1_amd64.deb
+
+sudo apt --fix-broken install
+
+
+
+
+
+Now run the code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

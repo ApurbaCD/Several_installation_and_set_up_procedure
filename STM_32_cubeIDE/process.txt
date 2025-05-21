@@ -1,0 +1,48 @@
+##For linux ubuntu##
+
+Create an account on https://www.st.com/en/development-tools/stm32cubeide.html
+
+
+deb for debian.
+
+download all the package https://www.st.com/en/development-tools/stm32cubemx.html
+
+
+sudo dpkg -i *.deb
+
+or sometime need (this is best)
+(chmod +x st-stm32cubeide_1.18.1_24813_20250409_2138_amd64.deb_bundle.sh
+
+sudo st-stm32cubeide_1.18.1_24813_20250409_2138_amd64.deb_bundle.sh
+)
+
+
+# also need these
+
+sudo apt update
+sudo apt install stlink-tools
+st-info --version
+
+
+
+ sudo apt install openocd
+ 
+
+ st-info --probe  //to check the stm32 blueboard connected or not
+ 
+ 
+ 
+ to flash memory erase :
+ 
+ 
+ st-flash erase
+ 
+ or to flash memory erase 
+ 
+ openocd -f interface/stlink.cfg -f target/stm32f1x.cfg \
+                           -c "init" \
+                           -c "reset halt" \
+                           -c "flash write_image erase /path/to/your_firmware.elf" \
+                           -c "verify_image /path/to/your_firmware.elf" \
+                           -c "reset run" \
+                           -c "shutdown"

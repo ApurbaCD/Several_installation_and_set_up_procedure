@@ -1,0 +1,21 @@
+
+
+Open helloworld.cpp so that it is the active file.
+
+Press the play button in the top right corner of the editor.
+
+You'll only be asked to choose a compiler the first time you run helloworld.cpp. This compiler will be set as the "default" compiler in tasks.json file.
+
+The first time you run your program, the C++ extension creates tasks.json, which you'll find in your project's .vscode folder. tasks.json stores build configurations.
+
+
+Go back to helloworld.cpp so that it is the active file.
+
+
+Set a breakpoint by clicking on the editor margin or using F9 on the current line. 
+
+From the drop-down next to the play button, select Debug C/C++ File. 
+
+Choose C/C++: g++ build and debug active file from the list of detected compilers on your system (you'll only be asked to choose a compiler the first time you run or debug helloworld.cpp). 
+
+

@@ -1,0 +1,21 @@
+0: I use that website help me "https://www.computernetworkingnotes.com/ccna-study-guide/how-to-install-and-start-packet-tracer-in-ubuntu.html"
+
+
+or try below thing
+
+1: download packet tracer from "https://www.netacad.com/courses/getting-started-cisco-packet-tracer?courseLang=en-US"
+
+2: open the downloaded file with 'software install' application
+	
+	that will redirect u to ubuntu software app
+	
+	now install packettracer (this is  the Packet Tracer installation file)
+	
+3: now depackage the downloaded file
+	
+	sudo dpkg -i [installer file name]
+	or sudo dpkg -i Packet_Tracer822_amd64_signed.deb
+	
+4: to run: packettracer 
+
+5: most important wifi must be off to run the app
