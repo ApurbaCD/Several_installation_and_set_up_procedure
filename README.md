@@ -1,1 +1,1 @@
-#### This is not 100% accurate procedure 
+#### The procedure provided may not be 100% accurate.
